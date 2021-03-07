@@ -10,6 +10,14 @@ body {
     text-align: center;
 }
 
+footer {
+    margin-top: 3em;
+}
+
+footer a {
+    color: #c2b618;
+}
+
 .webCounter {
     font-size: 4em;
     color: white;
