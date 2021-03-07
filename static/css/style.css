@@ -18,6 +18,10 @@ footer a {
     color: #c2b618;
 }
 
+.textForm {
+    margin-right: 30px;
+}
+
 .webCounter {
     font-size: 4em;
     color: white;
