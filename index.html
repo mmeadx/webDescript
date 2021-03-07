@@ -17,19 +17,52 @@
 <body>
     <h1 id="almanac">ALMANAC <em>Character Counter (v1.0)</em></h1>
 
-    <p>Short Web Description</p>
+    <h3 class="titles"></p>Short Web Description</h3>
     <form name="myform">
-        <textarea name="shortWebDescription" onKeyDown="limitText(this.form.shortWebDescription,this.form.countdown,90);"
+        <textarea name="shortWebDescription" id="shortWebDescription" onKeyDown="limitText(this.form.shortWebDescription,this.form.countdown,90);"
             onKeyUp="limitText(this.form.shortWebDescription,this.form.countdown,90);" rows="3" cols="50"></textarea>
-        <input class="shortWebCounter" readonly type="text" name="countdown" size="3" value="90">
+        <input class="webCounter" readonly type="text" name="countdown" size="3" value="90">
     </form>
+    <div class="tooltip"><button onclick="copyShortWebDescription()" onmouseout="tooltipOut()"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Copy short</button></div>
 
-    <p>Medium Web Description</p>
+    <hr width="50%">
+
+    <h3 class="titles">Medium Web Description</h3>
     <form name="myform">
-        <textarea name="shortWebDescription" onKeyDown="limitText(this.form.shortWebDescription,this.form.countdown,90);"
-            onKeyUp="limitText(this.form.shortWebDescription,this.form.countdown,90);" rows="3" cols="50"></textarea>
-        <input class="shortWebCounter" readonly type="text" name="countdown" size="3" value="90">
+        <textarea name="mediumWebDescription" id="mediumWebDescription" onKeyDown="limitText(this.form.mediumWebDescription,this.form.countdown,120);"
+            onKeyUp="limitText(this.form.mediumWebDescription,this.form.countdown,120);" rows="4" cols="50"></textarea>
+        <input class="webCounter" readonly type="text" name="countdown" size="3" value="120">
     </form>
+    <div class="tooltip"><button onclick="copyMediumWebDescription()" onmouseout="mediumTooltipOut()"><span class="tooltiptext" id="myMediumTooltip">Copy to clipboard</span>Copy medium</button></div>
+
+    <hr width="50%">
+
+    <h3 class="titles">Long Web Description</h3>
+    <form name="myform">
+        <textarea name="longWebDescription" id="longWebDescription" onKeyDown="limitText(this.form.longWebDescription,this.form.countdown,240);"
+            onKeyUp="limitText(this.form.longWebDescription,this.form.countdown,240);" rows="5" cols="50"></textarea>
+        <input class="webCounter" readonly type="text" name="countdown" size="3" value="240">
+    </form>
+    <div class="tooltip"><button onclick="copyLongWebDescription()" onmouseout="longTooltipOut()"><span class="tooltiptext" id="myLongTooltip">Copy to clipboard</span>Copy long</button></div>
+
+    <hr width="50%">
+
+    <h3 class="titles"></p>Story Title</h3>
+    <form name="myform">
+        <textarea name="storyTitle" id="storyTitle" onKeyDown="limitText(this.form.storyTitle,this.form.countdown,90);"
+            onKeyUp="limitText(this.form.storyTitle,this.form.countdown,90);" rows="2" cols="50"></textarea>
+        <input class="webCounter" readonly type="text" name="countdown" size="3" value="90">
+    </form>
+    <div class="tooltip"><button onclick="copyStoryTitle()" onmouseout="storyTitleTooltipOut()"><span class="tooltiptext" id="myStoryTitleTooltip">Copy to clipboard</span>Copy title</button></div>
+
+    <h3 class="titles"></p>Story Description</h3>
+    <form name="myform">
+        <textarea name="storyDescription" id="storyDescription" onKeyDown="limitText(this.form.storyDescription,this.form.countdown,90);"
+            onKeyUp="limitText(this.form.storyDescription,this.form.countdown,90);" rows="4" cols="50"></textarea>
+        <input class="webCounter" readonly type="text" name="countdown" size="3" value="90">
+    </form>
+    <div class="tooltip"><button onclick="copyStoryDescription()" onmouseout="tooltipOut()"><span class="tooltiptext" id="myStoryDescriptionTooltip">Copy to clipboard</span>Copy description</button></div>
+
 
     <script src="./static/js/app.js"> </script>
 </body>
