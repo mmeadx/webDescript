@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Descriptions</title>
+
+    <!-- Our CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+
+</head>
+
+<body>
+    <h1 id="almanac">ALMANAC <em>Character Counter (v1.0)</em></h1>
+
+    <p>Short Web Description</p>
+    <form name="myform">
+        <textarea name="shortWebDescription" onKeyDown="limitText(this.form.shortWebDescription,this.form.countdown,90);"
+            onKeyUp="limitText(this.form.shortWebDescription,this.form.countdown,90);" rows="3" cols="50"></textarea>
+        <input class="shortWebCounter" readonly type="text" name="countdown" size="3" value="90">
+    </form>
+
+    <p>Medium Web Description</p>
+    <form name="myform">
+        <textarea name="shortWebDescription" onKeyDown="limitText(this.form.shortWebDescription,this.form.countdown,90);"
+            onKeyUp="limitText(this.form.shortWebDescription,this.form.countdown,90);" rows="3" cols="50"></textarea>
+        <input class="shortWebCounter" readonly type="text" name="countdown" size="3" value="90">
+    </form>
+
+    <script src="./static/js/app.js"> </script>
+</body>
+
+</html>

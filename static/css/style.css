@@ -1,0 +1,16 @@
+#almanac {
+    color: #c2b618;
+}
+
+body {
+    background-color: #222;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.shortWebCounter {
+    font-size: 4em;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
