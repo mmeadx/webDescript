@@ -15,18 +15,18 @@
 </head>
 
 <body>
-    <h1 id="almanac">ALMANAC <em>Character Counter (v1.0)</em></h1>
+    <h1 id="almanac">ALMANAC <em>Character Counter (v1.1)</em></h1>
+    <hr width="5%" color="#c2b618" class="noSpace">
 
-    <h3 class="titles">
-        </p>Short Web Description</h3>
+    <h3 class="titles">Short Web Description</h3>
     <form name="myform">
         <textarea class="textForm" name="shortWebDescription" id="shortWebDescription"
             onKeyDown="limitText(this.form.shortWebDescription,this.form.countdown,90);"
             onKeyUp="limitText(this.form.shortWebDescription,this.form.countdown,90);" rows="3" cols="50"></textarea>
         <input class="webCounter" readonly type="text" name="countdown" size="3" value="90">
     </form>
-    <div class="tooltip"><button onclick="copyShortWebDescription()" onmouseout="tooltipOut()"><span class="tooltiptext"
-                id="myTooltip">Copy to clipboard</span>Copy short</button></div>
+    <div class="tooltip"><button class="copyButton" onclick="copyShortWebDescription()" onmouseout="tooltipOut()"><span class="tooltiptext"
+                id="myTooltip">Copy to clipboard</span>copy short</button></div>
 
     <hr width="50%">
 
@@ -37,8 +37,8 @@
             onKeyUp="limitText(this.form.mediumWebDescription,this.form.countdown,120);" rows="4" cols="50"></textarea>
         <input class="webCounter" readonly type="text" name="countdown" size="3" value="120">
     </form>
-    <div class="tooltip"><button onclick="copyMediumWebDescription()" onmouseout="mediumTooltipOut()"><span
-                class="tooltiptext" id="myMediumTooltip">Copy to clipboard</span>Copy medium</button></div>
+    <div class="tooltip"><button class="copyButton" onclick="copyMediumWebDescription()" onmouseout="mediumTooltipOut()"><span
+                class="tooltiptext" id="myMediumTooltip">Copy to clipboard</span>copy medium</button></div>
 
     <hr width="50%">
 
@@ -49,31 +49,29 @@
             onKeyUp="limitText(this.form.longWebDescription,this.form.countdown,240);" rows="5" cols="50"></textarea>
         <input class="webCounter" readonly type="text" name="countdown" size="3" value="240">
     </form>
-    <div class="tooltip"><button onclick="copyLongWebDescription()" onmouseout="longTooltipOut()"><span
-                class="tooltiptext" id="myLongTooltip">Copy to clipboard</span>Copy long</button></div>
+    <div class="tooltip"><button class="copyButton" onclick="copyLongWebDescription()" onmouseout="longTooltipOut()"><span
+                class="tooltiptext" id="myLongTooltip">Copy to clipboard</span>copy long</button></div>
 
     <hr width="50%">
 
-    <h3 class="titles">
-        </p>Story Title</h3>
+    <h3 class="titles">Story Title</h3>
     <form name="myform">
         <textarea class="textForm" name="storyTitle" id="storyTitle" onKeyDown="limitText(this.form.storyTitle,this.form.countdown,90);"
-            onKeyUp="limitText(this.form.storyTitle,this.form.countdown,90);" rows="2" cols="50"></textarea>
+            onKeyUp="limitText(this.form.storyTitle,this.form.countdown,90);" rows="3" cols="50"></textarea>
         <input class="webCounter" readonly type="text" name="countdown" size="3" value="90">
     </form>
-    <div class="tooltip"><button onclick="copyStoryTitle()" onmouseout="storyTitleTooltipOut()"><span
-                class="tooltiptext" id="myStoryTitleTooltip">Copy to clipboard</span>Copy title</button></div>
+    <div class="tooltip"><button class="copyButton" onclick="copyStoryTitle()" onmouseout="storyTitleTooltipOut()"><span
+                class="tooltiptext" id="myStoryTitleTooltip">Copy to clipboard</span>copy title</button></div>
 
-    <h3 class="titles">
-        </p>Story Description</h3>
+    <h3 class="titles">Story Description</h3>
     <form name="myform">
         <textarea class="textForm" name="storyDescription" id="storyDescription"
             onKeyDown="limitText(this.form.storyDescription,this.form.countdown,90);"
             onKeyUp="limitText(this.form.storyDescription,this.form.countdown,90);" rows="4" cols="50"></textarea>
         <input class="webCounter" readonly type="text" name="countdown" size="3" value="90">
     </form>
-    <div class="tooltip"><button onclick="copyStoryDescription()" onmouseout="tooltipOut()"><span class="tooltiptext"
-                id="myStoryDescriptionTooltip">Copy to clipboard</span>Copy description</button></div>
+    <div class="tooltip"><button class="copyButton" onclick="copyStoryDescription()" onmouseout="storyDescriptionTooltipOut()"><span class="tooltiptext"
+                id="myStoryDescriptionTooltip">Copy to clipboard</span>copy description</button></div>
 
 
 

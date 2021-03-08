@@ -115,8 +115,7 @@ function copyStoryDescription() {
 
 	/* Select the text field */
 	copyText.select();
-	copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
+	copyText.setSelectionRange(0, 99999); /* For mobile devices */1
 	/* Copy the text inside the text field */
 	document.execCommand("copy");
 
